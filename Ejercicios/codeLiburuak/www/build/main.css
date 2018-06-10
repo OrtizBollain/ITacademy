@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Kollectif;
+    src: url(../assests/fonts/Kollektif.ttf);
+}
+
+html{
+    background-color: rgba(219, 220, 206, 0.3);
+}
+
+
+.all{
+    text-align: center;
+    font-family: 'Kollectif';
+}
+
+.header{
+    margin-top: -2%;
+    margin-left: -2.2%;
+}
+
+.links{
+    margin-top: 0.5%;
+    margin-bottom: 4.5%;
+}
+
+
+.links>a{
+    color:#092334FF;
+    padding: 5%;
+    padding-top: 5%;
+    font-size: 110%;
+}
+
+.callToAction{
+    font-size: 130%;
+    margin-bottom: -0%;
+}
+
+.search{
+    padding: 0.2%;
+    margin-bottom: 6%;
+}
+
+.button{
+    margin-top: -1%;
+}
+
+input[type=search] {
+    width: 30%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=search]:focus {
+    width: 35%;
+}
+
+.container{
+    width: 10%;
+    align-items: center;
+}
