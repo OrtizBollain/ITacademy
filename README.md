@@ -12,4 +12,5 @@ https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ2_EsquemaLibu
 
 Ejercicio_3: modelo base de datos Liburuak
 https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ3(simplificado)_Liburuak_ModeloBBDD_DavidOrtizBollain.pdf
+https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ3(corregido)_LiburuakBBDD_Editable_DavidOrtizBollain.png
 
