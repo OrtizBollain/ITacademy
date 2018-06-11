@@ -7,17 +7,65 @@ html{
     background-color: rgba(219, 220, 206, 0.3);
 }
 
-
+/* <!-- #ffdbe3 color letra --> */
 .all{
     text-align: center;
     font-family: 'Kollectif';
     color: #181818;
 }
 
+header{
+    margin-bottom: 0.5%;
+    text-align: right;
+    background-color: #181818a8;
+    height: 50px;
+    width: 103%;
+    margin-top: -1%;
+    margin-left: -2.4%;
+    display:inline-block;
+}
+
+header.img{
+    margin-top: -3%;
+}
+.loginButton{
+    margin: 1%;
+    margin-top: 1.1%;
+    /* margin-right: 3%; */
+    font-size: 120%;
+    float: right;
+
+}
+.basquetButton{
+    margin: 1%;
+    margin-top: 1.1%;
+    /* margin-right: 3%; */
+    font-size: 120%;
+    float: right;
+
+}
+.loginIcon{
+    float: right;
+    margin: 1%;
+    margin-right: -0.5%;
+    margin-top: 0.6%;
+    
+}
+.basquetIcon{
+    float: right;
+    margin: 1%;
+    margin-right: -0.5%;
+    margin-top: 0.6%;
+}
+
+
 .header{
-    margin-top: -2%;
+    margin-top: -0.8%;
     margin-left: -2.2%;
 }
+/* .header>input{
+    align-items: right;
+} */
 
 .links{
     margin-top: 0.5%;
