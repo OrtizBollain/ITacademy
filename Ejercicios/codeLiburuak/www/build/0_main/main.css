@@ -11,6 +11,7 @@ html{
 .all{
     text-align: center;
     font-family: 'Kollectif';
+    color: #181818;
 }
 
 .header{
@@ -42,18 +43,29 @@ html{
 }
 
 .button{
-    margin-top: -1%;
+    margin-top: 2%;
 }
 
+.radio{
+    margin-top: -0.5%;
+}
+
+.radio>span{
+    font-style: italic;
+    margin-left: 1%;
+    margin-top: -3%;
+}
+
+
 input[type=search] {
-    width: 30%;
+    width: 38%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
 input[type=search]:focus {
-    width: 35%;
+    width: 42%;
 }
 
 .container{

@@ -14,11 +14,11 @@
        
     </header> -->
     <!-- #ffdbe3 color letra -->
-    <div class="header"> <img src="../assests/imgs/portadaMain.jpg" alt="Imagen de libros apilados y título liburuak" title=""/>
+    <div class="header"> <img src="C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assests\imgs\portadaMain.jpg" alt="Imagen de libros apilados y título liburuak" title=""/>
         <!-- "C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assests\imgs\portadaMain.jpg" -->
     </div>
-    <!-- sends you to writers div in main-->
     
+    <!-- sends you to #writer, #category, #latest or #show div in main-->
     <div class="links"><a href="#writer">Idazleak</a>
     <a href="#category">Kategoriak</a>
     <a href="#latest">Nobedadeak</a>
@@ -28,9 +28,26 @@
     <form class="search">  
             <p class="callToAction">Irakurri</p> 
         <p>
-            <input type="search" name="search" placeholder="Bilatu ia milioi bat ale artean.."/>
-            <p class="button"><input type="submit" name="search by name, autor or ISBN" value="Liburu bilaketa"/>
-            <input type="submit" name="opens advancedForm" value="Bilaketa aurreratua"/></p>
+            <input type="search" name="search" placeholder="Bilatu ia milioi bat ale artean..."/>
+            <input type="submit" name="search by name, autor or ISBN" value="Liburu bilaketa"/>
+
+            <div class="radio">
+                <span><input type="radio" id="searchAll"
+                    name="searchFilter" value="searchAll">
+                <label for="searchAll">Orokorra</label></span>
+
+                <span><input type="radio" id="searchBook"
+                name="searchFilter" value="searchBook">
+                <label for="searchBook">Liburua</label></span>
+            
+                <span><input type="radio" id="searchAutor"
+                    name="searchFilter" value="searchAutor">
+                <label for="searchAutor">Idazlea</label></span>
+
+                <span><input type="radio" id="searchISBN"
+                    name="searchFilter" value="searchISBN">
+                <label for="searchISBN">ISBN</label></span>
+            </div>
         </p>
     </form>
    
