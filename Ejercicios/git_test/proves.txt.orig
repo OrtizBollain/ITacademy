@@ -1,0 +1,7 @@
+This is a .txt part of a git bash exercise for ITacademy.
+I'm adding new information to this .txt.
+<<<<<<< HEAD
+Including new text changing branches.
+=======
+I'm adding this information using branch1.
+>>>>>>> branch1

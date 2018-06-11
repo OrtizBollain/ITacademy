@@ -1,6 +1,9 @@
 # ITacademy
 Ejercicios formación IT Academy de Barcelona Activa primera edición
 
+Ejercicio_0: test git usando terminal git bash
+https://github.com/OrtizBollain/ITacademy/tree/master/Ejercicios/git_test
+
 Ejercicio_1: varias estructuras de base de datos sencillas
 https://github.com/OrtizBollain/ITacademy/blob/master/Desktop/Ejercicios/itacademy_bbdd_David_Ortiz.pdf
 
