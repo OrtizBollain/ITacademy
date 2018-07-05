@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liburuak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../imgs/shortcutIcon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|Inconsolata" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <title>
+        <h1>LIBURUAK</h1>
+        </title>    
+        <p class="login_basquet icons"> <a> Login </a> <a><i class="fas fa-shopping-basket"></a></i></p>
+         
+        <form id="searchForm">
+                <select class="searchSelect">
+                    <option value="0">Orokorra</option>
+                    <option value="1">Idazlea</option>
+                    <option value="2">Liburua</option>
+                </select>
+            <input class="searchBar" type="text" placeholder="Liburua / Idazlea / ISBN" name="searchBar"/>
+            <button class="searchButton" type="submit">
+                <i id="searchIcon" class="fa fa-search icons"></i>
+            </button>
+        </form>
+        <nav>  
+            <p class="navigation" href="#"><a> Idazleak</a></p>
+            <p class="navigation" href="#"><a> Kategoriak</a></p>
+            <p class="navigation" href="#"><a> Nobedadeak</a></p>
+
+            <!-- <ul>
+                <li href="#" >Idazleak</li>
+                <li href="#" >Kategoriak</li>
+                <li href="#" >Nobedadeak</li>
+            </ul> -->
+        </nav>
+    </header>
+
+    <article id="content">
+        <h2 class="callToAction">Milaka aleren artean bilatu...</h2>
+        <!--    This form will be shown at min-widht: 1130px    -->
+        <form class="search">
+                
+                <input class="mainSearch" type="search" name="search" placeholder="Liburua / Idazlea / ISBN"/>
+                
+
+                <div class="radio">
+                    <span><input type="radio" id="searchAll"
+                        name="searchFilter" value="searchAll">
+                    <label for="searchAll">Orokorra</label></span>
+
+                    <span><input type="radio" id="searchBook"
+                    name="searchFilter" value="searchBook">
+                    <label for="searchBook">Liburua</label></span>
+                
+                    <span><input type="radio" id="searchAutor"
+                        name="searchFilter" value="searchAutor">
+                    <label for="searchAutor">Idazlea</label></span>
+                </div>
+                <button class="mainSearchButton"  type="submit" name="search by name, autor or ISBN">
+                        Liburuak Bilatu<i id="searchIcon" class="fa fa-search icons"></i>
+                    </button>
+        </form>
+    
+
+        <div class="banner">
+
+        </div>
+
+        <div class="categoryGrandParent">
+            <div class="categoryParent1">
+                <div class="category"></div>
+                <div class="category"></div>
+            </div>
+            <div class="categoryParent2">
+                <div class="category"></div>
+                <div class="category"></div>
+            </div>
+            <div class="categoryParent3">
+                <div class="category"></div>
+                <div class="category"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <h2>Hileko Idazlea</h2>
+        <div id="writerImage">
+            <h3> Bernardo Atxaga </h3>
+            <p class="writerDescription">En la narración fluyen con toda naturalidad estilos
+                narrativos de muy diversas direcciones y procedencias.</p>
+        </div>
+        <div class="bookGrandParent">
+                <div class= "bookParent">
+                    <div class="bookFirst">
+                        <img class="bookImage" src="../img/2.png" alt="Hileko idazlea">       
+                        <div class="bookInfo">
+                                <h3>Obabakoak</h3>
+                                <p class="price">10,00€<span> 15,00€</span></p>
+                                <button class="toBuy">Erosi</button>
+                        </div>
+                    </div>
+                </div>  
+                <div  class= "bookParent">
+                    <div class="book">
+                        <img class="bookImage" src="../img/1.png" alt="Hileko idazlea">
+                        <div class="bookInfo">  
+                            <h3>Xolak</h3>
+                            <p class="price">10,00€<span> 15,00€</span></p>
+                            <button class="toBuy">Erosi</button>
+                        </div>
+                    </div> 
+                </div> 
+                <div  class= "bookParent">
+                    <div class="bookLast">
+                        <img class="bookImage" src="../img/3.png" alt="Hileko idazlea">   
+                        <div class="bookInfo">
+                            <h3>Sara</h3>
+                            <p class="price">10,00€<span> 15,00€</span></p>
+                            <button class="toBuy">Erosi</button>
+                        </div>
+                    </div>    
+                </div>
+            </div>   
+    </article>    
+    <footer>
+        <p> 2018 - All rights reserved Homiga Coders</p>
+        <ul class="contact">
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="far fa-envelope"></i></li>
+        </ul>
+
+    </footer>
+
+</body>

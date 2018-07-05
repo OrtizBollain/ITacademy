@@ -8,86 +8,250 @@ html{
 }
 
 /* <!-- #ffdbe3 color letra --> */
-.all{
+
+/* typos */
+body{
+    font-family: 'Georgia', 'Times', 'Times New Roman';
+    font-size: 16px;
+    color: #181818;
     text-align: center;
-    font-family: 'Kollectif';
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #181818;
+    letter-spacing: 0.05em;
+}
+h2{
+    font-family: 'Georgia', 'Times', 'Times New Roman';
+    font-size: 24px;
     color: #181818;
 }
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #181818;
+}
+
+
+/* Barra superior aparecerá al interactuar con javaScript -
+------------------------------------*/
 
 header{
     margin-bottom: 0.5%;
     text-align: right;
-    background-color: #181818a8;
+    background-color: #181818ec;
     height: 50px;
     width: 103%;
-    margin-top: -1%;
-    margin-left: -2.4%;
-    display:inline-block;
+    margin-top: -0.1%;
+    float: left;
+    margin-left: -2%;
+    position: fixed;
 }
 
-header.img{
-    margin-top: -3%;
+.headerLogo{
+    margin: 2%;
+    margin-top: 1.3%;
+    width: 116px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.57);
+    float: left;
+    letter-spacing: 0.05em;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.57);
+    border-width: 2px;
 }
-.loginButton{
-    margin: 1%;
-    margin-top: 1.1%;
-    /* margin-right: 3%; */
-    font-size: 120%;
-    float: right;
 
-}
-.basquetButton{
-    margin: 1%;
-    margin-top: 1.1%;
-    /* margin-right: 3%; */
-    font-size: 120%;
-    float: right;
+/* Buscador de barra superior 
+---------------------------------------------------------*/
 
+
+input[class=topSearch] {
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 13%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.768);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.44)
 }
+
+/* On focus, change its width to 22% */
+input[class=topSearch]:focus {
+    width: 22%;
+}
+
+.fa-search{
+    margin-top: 1.6%;
+    float: left;
+    color: rgba(255, 255, 255, 0.57);
+    margin-left: 5px;
+}
+
+/* Iconos de barra superior 
+---------------------------------------------------------*/
 .loginIcon{
     float: right;
     margin: 1%;
-    margin-right: -0.5%;
-    margin-top: 0.6%;
+    margin-right: 25px;
+    margin-top: 2%; 
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.57);
+    text-emphasis: bold;
+    text-decoration: underline;
+}
+.fa-shopping-basket{
+    margin-top: 1.7%;
+    float: right;
+    color: rgba(255, 255, 255, 0.57);
+    margin-right: 100px;
+    font-size: 140%;
+}
+.fa-facebook-f{
+    margin-top: 2%;
+    float: right;
+    color: rgba(255, 255, 255, 0.57);
+    margin-right: 10px;
+}
+.fa-instagram{
+    margin-top: 2%;
+    float: right;
+    color: rgba(255, 255, 255, 0.57);
+    margin-right: 10px;
+}
+.fa-twitter{
+    margin-top: 2%;
+    float: right;
+    color: rgba(255, 255, 255, 0.57);
+    margin-right: 10px;
+}
+.fa-envelope{
+    margin-top: 2%;
+    float: right;
+    color: rgba(255, 255, 255, 0.57);
+    margin-right: 30px;}
+
+
+/* 
+color: rgba(219, 220, 206, 0.816); */
+
+
+/* Iconos y botones
+a modificar con javaScript e incluir iconos nativos de css
+----------------------------------------------------------*/
+
+.topSearchButton{
+    margin: 1%;
+    margin-left: 0%;
+    margin-top: 1.1%;
+    /* margin-right: 3%; */
+    font-size: 90%;
+    float: left;
+}
+
+.topButton{
+    margin: 1%;
+    margin-top: 1.1%;
+    float: left;
+
+}
+
+/* Portada superior 
+------------------------------------------------------------*/
+
+.cover{
+    background: linear-gradient(rgba(141, 153, 174, 0.2), 
+    rgba(141, 153, 174, 0.3)), 
+    url(../imgs/headerBig2.png) 
+    no-repeat fixed;
+    height: 260px;
+    width: 103%;
+    margin-left: -2%;
+    margin-top: -1.5%;
+}
+
+.title{
+    width: 100%;
+    height: 30%;
+    float:left;
+    margin-top: 120px;
+    /* margin:auto; */
+    /* margin-top: -11.5%; */
     
 }
-.basquetIcon{
-    float: right;
-    margin: 1%;
-    margin-right: -0.5%;
-    margin-top: 0.6%;
+
+.frame{
+    width: 280px;
+    height: 65px;
+    margin:auto;
+    border-style: solid;
+    border-color: #181818;
+    background: linear-gradient(40deg,  #181818a8, rgba(219, 220, 206, 0.3) );
+}
+.frame>h1{
+    line-height: 22px;
+    font-size: 41px;
+    margin-top: 4%;
 }
 
 
-.header{
-    margin-top: -0.8%;
-    margin-left: -2.2%;
-}
-/* .header>input{
-    align-items: right;
-} */
+/* Links bajo la portada 
+----------------------------*/
 
 .links{
-    margin-top: 0.5%;
-    margin-bottom: 4.5%;
+    /* background: linear-gradient( 60deg, #181818a8, rgba(219, 220, 206, 0.6) ); */
+    margin-left: -0.6%;
+    width: 102.6%;
+    height: 26px;
+    padding-top: 0;
 }
 
+a{
+    margin-top: 1%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    letter-spacing: 0.1em;
+}
+/* :#092334FF */
+/* color:rgb(12, 45, 66) */
 
-.links>a{
-    color:#092334FF;
-    padding: 5%;
-    padding-top: 5%;
+a:link{
+    color:#181818;
+}
+a:visited{
+    color:#18181882;
+    /* color:rgb(149, 197, 226); */
+}
+a:hover{
+    color: #18181882;
+    /* text-shadow: 1px 0px 0px rgb(225, 235, 241); */
+}
+a:active{
+    color: #181818;
     font-size: 110%;
 }
 
+
+
+/* Formulario de búsqueda central 
+----------------------------------- */
+
 .callToAction{
-    font-size: 130%;
     margin-bottom: -0%;
+    margin-top: 4%;
 }
 
 .search{
     padding: 0.2%;
     margin-bottom: 6%;
+}
+
+.mainSearchButton{
+    margin-top: 1.5%;
+    font-size: 120%;
 }
 
 .button{
@@ -105,18 +269,102 @@ header.img{
 }
 
 
-input[type=search] {
+input[class=mainSearch] {
     width: 38%;
+    font-size: 120%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=search]:focus {
+input[class=mainSearch]:focus {
     width: 42%;
 }
 
-.container{
-    width: 10%;
+
+/* Banner de escritor 
+-------------------------------------------------------*/
+
+.standardParentContainer{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.writerHeading{ 
+    background: linear-gradient(40deg,  #181818a8, rgba(219, 220, 206, 0.3) );
+
+}
+
+.writerParentContainer{
+    height: auto;
+    width: 30%;
+    float:left;
+}
+
+.writerPhoto>a:link{
+    color:#181818;
+}
+.writerPhoto>a:visited{
+    color:red;
+}
+.writerPhoto>a:hover{
+    color: #181818a8;
+    /* text-shadow: 1px 0px 0px rgb(225, 235, 241); */
+
+}
+.writerPhoto>a:active{
+    color: #181818;
+    font-size: 110%;
+}
+
+.writerText{
+    width: 62%;
+    display: block;
+    float: left;
+    text-align: left;
+    color: rgb(102, 141, 167);
+    margin-left: 3%;
+    margin-top: -1.5%;
+
+}
+.writerText>h3{
+    color: red;
+    margin-bottom: -1.2%;
+}
+
+.bookParentContainer{
+    display:block;
+    /* padding-left: 25%; */
+    width: 100%;
+    margin-top: -1.3%;
+    color: rgb(102, 141, 167);
+    margin-left: 4%;
+}
+
+.bookContainer{
+    width: relative;
+    height: 350px;
+    margin: 1%;
+    margin-left: 3.5%;
     align-items: center;
+    float: left;
+    display: cover;
+    text-align: center;
+}
+
+.bookContainer>h3{
+    margin-top: -1.5%;
+    margin-bottom: 0%;
+}
+
+
+.bookContainer>p{
+    margin-top: 0%;
+}
+.bookContainer>p>span{
+   color: red;
+   text-decoration: line-through;
+   margin-left: 3%;
+
 }

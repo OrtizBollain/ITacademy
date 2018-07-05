@@ -6,36 +6,70 @@
     <title>Liburuak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../imgs/shortcutIcon.png" />
     <script src="main.js"></script>
+    <script src="../jquery-3.3.1.js"></script>
 </head>
 <body class="all">
-    <header>
-
-        <input class="basquetButton" type="button"  href="" name="basquet" value="Saskia">
-        <img class="basquetIcon" title="basquet" src="C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assets\imgs\basquetIcon.png"/>
-        <input class="loginButton" type="button" href="" name="login" value="Login">
-        <img class="loginIcon" title="login" src="C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assets\imgs\loginIcon.png"/>
-
+    <script>
+    $(window).scroll(function(){
+        if($(this).scrollTop()>10) {
+            console.log("Hola scroll");
+        }
+        else{console.log("No scroll")
+        }
+    });
+    </script>
+    <nav>
+ <!--   Top bar -->
+    <header> 
+        <div class="headerLogo">Liburuak.eus</div>
+        <input class="topSearch" type="search" name="search" 
+        placeholder="Liburua / Idazlea / ISBN"/>
+        <i class="fas fa-search"></i>
+        <i class="far fa-envelope"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fas fa-shopping-basket"></i>
+        <div class="loginIcon">Login</div> 
     </header>
     
-        
-    <div class="header"> 
-        <img src="C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assets\imgs\portadaMain.jpg" alt="Imagen de libros apilados y título liburuak" title=""/>
-        <!-- "C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assets\imgs\portadaMain.jpg" -->
-    </div>
+<!--   Imagen background -->
+    <div class="cover">
+            <div class="title">  
+                    <div class="frame">
+                        <h1>Liburuak.eus 
+                            <span style="font-size:13px;
+                            color:rgb(225, 235, 241);">
+                            Euskal liburu guztiak eskuragarri</span>
+                        </h1>
+                    </div>
+                </div> </div> 
     
-    <!-- sends you to #writer, #category, #latest or #show div in main-->
-    <div class="links"><a href="#writer">Idazleak</a>
-    <a href="#category">Kategoriak</a>
-    <a href="#latest">Nobedadeak</a>
-    <a href="#show">Aurkezpenak</a></div>
+<!--   Logo cover -->
 
-    <!-- book searching engine -->
+
+<!-- Links to #writer, #category, #latest or #show div in main-->
+  <h3 class="links">    
+    <a class= "link" href="#writer">Idazleak</a>
+    <a class= "link" href="#category">Kategoriak</a>
+    <a class= "link" href="#latest">Nobedadeak</a>
+    <a class= "link" href="#show">Aurkezpenak</a>
+</h3>
+</nav>
+
+
+<!-- book searching engine -->
     <form class="search">  
-            <p class="callToAction">Irakurri</p> 
+            <!-- <img title="Liburuak.eus" src="C:\Users\David\Documents\ITacademy\Ejercicios\codeLiburuak\www\assets\imgs\Liburuak.eus.png"/> -->
+       <!-- <h1>Liburuak.eus</h1> -->
+        <h2 class="callToAction">Milaka aleren artean bilatu...</h2>
+
         <p>
-            <input type="search" name="search" placeholder="Bilatu ia milioi bat ale artean..."/>
-            <input type="submit" name="search by name, autor or ISBN" value="Liburu bilaketa"/>
+            <input class="mainSearch" type="search" name="search" placeholder="Liburua / Idazlea / ISBN"/>
+            
 
             <div class="radio">
                 <span><input type="radio" id="searchAll"
@@ -54,10 +88,62 @@
                     name="searchFilter" value="searchISBN">
                 <label for="searchISBN">ISBN</label></span>
             </div>
+            <input class="mainSearchButton" type="submit" name="search by name, autor or ISBN" value="Liburu bilaketa"/>
         </p>
     </form>
-   
-    <div class="writer" id="writer">Idazleak
+    <div class="standardParentContainer">
+    <h2 class="writerHeading" id="writer">Hileko idazlea!</h2>
+        <div class="writerParentContainer">
+            <img src="../imgs/Jon_Arretxe.png" alt="Foto de Jon Arretxe Pérez">
+            <a href="https://eu.wikipedia.org/wiki/Jon_Arretxe">Más sobre el autor ...</a>
+        </div>
+        <div class="writerText">
+            <h3>Jon Arretxe Perez</h3>
+            <p>Estos últimos años ha ido publicando crónicas de viajes como lo son Griot (Elkar, 2004) o Fatum (Elkar, 2008).</p>
+        </div>
+        <div class="bookParentContainer">
+            <div class="bookContainer">
+                <img src="../imgs\1.png" alt="Xahmaran">
+                <h3>Xahmaran</h3>
+                <p>7,25€<span> 9,74€</span></p>
+            </div>    
+            <div class="bookContainer">
+                <img src="../imgs/2.png" alt="Lurraren Taupadak">
+                <h3>Lurraren Taupadak</h3>
+                <p>12,00€<span> 18,00€</span></p>
+            </div> 
+            <div class="bookContainer">
+                <img src="../imgs/3.png" alt="Arrutiren Banda">
+                <h3>Arrutiren Banda</h3>
+                <p>10,00€<span> 15,00€</span></p>
+            </div> 
+        </div>
+    </div>
+    <div class="standardParentContainer">
+    <h2 class="category" id="category">Kategoriak</h2>
+        <div class="container">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>    
+        <div class="container">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div> 
+        <div class="container">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div> 
+    </div>
+    <div class="standardParentContainer">
+        <h2 class="latest" id="latest">Nobedadeak </h2>
         <div class="container">
             <img src="" alt="">
             <h1></h1>
@@ -77,54 +163,12 @@
             <img src="" alt="">
             <h1></h1>
             <p></p>
-        </div> 
-    </div>
-    <div class="category" id="category">Kategoriak
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div>
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div>    
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div> 
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div> 
-    </div>
-    <div class="latest" id="latest">Nobedadeak
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div>
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div class="container">    
-        <div>
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-        </div> 
-        <div class="container">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
         </div>
     </div>
-    <div class="show" id="show">Aurkezpenak
-        <video src=""></video>
-    </div>
+    <div class="standardParentContainer">
+        <h2 class="show" id="show">Aurkezpenak </h2>
+    <video src=""></video>
+    </div>  
+</div>
 </body>
 </html>

@@ -1,0 +1,423 @@
+/* Typo
+-----------------------------
+Cormorant Unicase: h1
+Inconsolate: body
+font-family: 'Cormorant Unicase', serif;
+*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FCFFFC;
+    color: #121420;
+    margin: auto;
+}
+h1{
+    display: inline;
+    font-family: 'EB Garamond',serif;
+    font-size: 32px;
+    color: #181818;
+    margin-left: 2.5%;
+    text-align: center;
+    letter-spacing: 1em
+
+}
+h2{
+    font-size: 24px;
+    color: #465362;
+    /* border-bottom: #465362 solid; */
+}
+h3{
+    color: #DE3C4B;
+    margin: 5%;
+}
+
+
+/* Header
+------------------------------------ */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+  }
+
+
+
+
+
+
+
+header{
+    background-color: ;
+    width: 100%;
+}
+
+.icons{
+    color: #FCFFFC;
+}
+
+.login_basquet{
+    float: right;
+    margin: 10px;
+    margin-right: 2.5%;
+}
+
+/* This form will be shown at min-widht: 1130px */
+.search {
+    display: none;
+}
+
+.callToAction{
+    margin-top: 4%;
+}
+
+
+/* S and M searchForm
+-------------------------------*/
+
+#searchForm{
+    margin: 10px;
+    margin-left: 2.5%;
+}
+
+.searchSelect{
+    background-color: #465362;
+    margin-right: 0;
+    border-style: none;
+    font-size: 110%;
+    display: inline-block;
+    width: 18px;
+    color: #FCFFFC;
+    border-color: #465362;
+}
+
+.searchBar{
+    background-color: #FCFFFC;
+    font-size: 110%;
+    border-color: #465362;
+    border-style: none;
+    background-color: #FCFFFC;
+    width: 75%;
+    display: inline-block;
+    /* margin-left: ; */
+}
+
+.searchButton{
+    background-color: #465362;
+    border-style: none;
+    display: inline;
+    cursor: pointer;
+}
+
+#searchIcon{
+    font-size: 120%;
+}
+
+nav{
+    background-color: rgba(252, 255, 252, 0.911);
+    color: #465362;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: 700;
+    font-stretch: expanded;
+    
+}
+
+.navigation{
+    flex: 1 1 auto;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1px;
+}
+
+.navigation:hover{
+border-bottom-style: none;
+border-color: rgba(252, 255, 252, 0.671);
+cursor: pointer;
+color:rgba(252, 255, 252, 0.911);
+background-color:#465362;
+margin-top: 0;
+}
+
+#content{
+    width: 95%;
+    margin: auto;
+    display: block;
+    min-height: 600px;
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-color: #FFC15E;
+}
+
+.categoryGrandParent{
+    width: 100%;
+    margin:auto;
+    display:flex;
+    flex-flow: row nowrap;
+    background-color: #DE3C4B;
+
+}
+
+.categoryParent1{
+    display: flex;
+    flex-flow: column wrap;
+    /* height: 200px; */
+    width: 33%;
+    margin: auto;
+    background-color: aquamarine;
+}
+.categoryParent2{
+    display: flex;
+    flex-flow: column wrap;
+    /* height: 200px; */
+    width: 33%;
+    margin: auto;
+    background-color: aquamarine;
+}
+.categoryParent3{
+    display: flex;
+    flex-flow: column wrap;
+    /* height: 200px; */
+    width: 33%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+
+.category{
+    background-color: aliceblue;
+    margin: 5px;
+    flex-basis: 50px;
+    border-radius: 5px;
+}
+
+#writerImage{
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    background: linear-gradient(rgba(70, 83, 98, 0.2),
+    rgba(255, 193, 94, 0.2)),
+    url(../img/BernardoAtxaga.png) no-repeat;
+}
+
+.writerDescription{
+    color: #FCFFFC;
+    margin: 5%;
+}
+
+.bookGrandParent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 250px;
+    /* margin-top: 10px; */
+    margin: 10px 0 0 0;
+}
+
+.bookParent{
+    flex: 1 1 auto;
+    width: 33%;
+    display: flex;
+    
+  
+} 
+.bookFirst{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-right: 5px;
+    flex-direction: column;
+} 
+.bookLast{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left: 5px;
+    flex-direction: column;
+} 
+
+.book{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookImage{
+    width: 100%;
+    margin: auto;
+}
+
+.bookInfo{
+margin: auto;
+display: flex;
+flex-flow: column nowrap;
+}
+
+.bookInfo h3{
+}
+
+.price{
+   /* display: inline; */
+}
+
+toBuy{
+    width: 100%;
+}
+
+
+
+@media (min-width: 400px) {
+    #writerImage {
+      width: 100%;
+      height: 234px;
+      overflow: hidden;
+      background: linear-gradient(rgba(70, 83, 98, 0.2),
+      rgba(255, 193, 94, 0.2)),
+      url(../img/BernardoAtxagaEstirada.png) no-repeat;
+
+    }
+    .bookGrandParent{
+        width: 100%;
+        text-align: center;
+        height: 150%;
+    }
+}
+
+@media (min-width: 780px) {
+    #writerImage {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    margin: auto;
+    background: linear-gradient(rgba(70, 83, 98, 0.2),
+    rgba(255, 193, 94, 0.2)),
+    url(../img/BernardoAtxagaEstirada.png) no-repeat;
+
+    }
+    .bookGrandParent{
+    width: 50%;
+    height: 
+    }
+
+}
+
+@media (min-width: 1130px) {
+    #writerImage {
+    width: 50%;
+    float: left;
+    margin: auto;
+    background: linear-gradient(rgba(70, 83, 98, 0.2),
+    rgba(255, 193, 94, 0.2)),
+    url(../img/BernardoAtxagaEstirada.png) no-repeat;
+
+    }
+    .bookParent{
+    /* height: 107px;
+    display: block; */
+    }
+    #searchForm{
+        display: none;
+    }
+   /* Formulario de búsqueda central 
+----------------------------------- */
+
+.search{
+    /* margin-bottom: 6%; */
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+    border-style: solid;
+    border-color: #465362;
+    border-width: 4px;
+}
+
+.search:hover{
+    background-color: #46536238; 
+}
+
+
+.mainSearchButton{
+    margin-top: 10px;
+    margin-top: 2%;
+    font-size: 120%;
+    margin-bottom: 20px;
+    border-color: #465362;
+    border-style: solid;
+    background-color: #465362;
+    color:#FCFFFC;
+}
+
+.mainSearchButton:hover{
+    border-color: #465362ab;
+    margin-bottom: 20px;
+    border-style: solid;
+    cursor: pointer;
+    background-color: #465362ab;
+    color:#FCFFFC; 
+}
+
+#searchIcon{
+    color: rgb(255, 193, 94);
+    font-size: 90%;
+    margin-left: 4px;
+}
+
+.radio{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.radio>span{
+    font-style: italic;
+}
+
+
+input[class=mainSearch] {
+    width: 80%;
+    font-size: 120%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[class=mainSearch]:focus {
+    width: 90%;
+
+}
+}
+
+@media (max-width: 1080px){
+    .bookParent{
+        /* height: 100px;
+        display: block; */
+    }
+}
+
+
+footer{
+    height: 60px;
+    width: 100%;
+    display: block;
+    background-color: #FFC15E;
+    color: #465362;
+    margin: 0%;
+}

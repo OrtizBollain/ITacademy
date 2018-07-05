@@ -1,0 +1,255 @@
+/*--------------------------------------------------------------
+Color palette
+--------------------------------------------------------------*/
+/* 
+color: #181818; eerie black (secondary)
+color: #E80A0B; ku crimson *red* (detail)
+color: #FDFDFD; baby powder *white* (primary)
+color: #553555; japanese violet (rare)
+color: #333333; negro grisaceo
+
+ */
+
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+#site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+h1{
+	font-size: 104px;
+	line-height: 0.6em;
+	margin-top: 25px;
+}
+.subtitle{
+	font-size: 64px;
+}
+
+/* p {
+	margin: 0;
+	padding: 1em 0;
+} */
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* ----------------------------------------------------------
+Nav scroll pop up style 
+------------------------------------------------------------ */
+
+
+.nav-grid-ready{
+	display: grid;
+	grid-template-areas:
+		"logo search search menu";
+	grid-template-columns: repeat(4, 1fr);
+	height: 35px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav-grid-none{
+	display: none;
+}
+
+
+#topLogo{
+	grid-area: logo;
+	height: inherit;
+	background-color: transparent;
+}
+
+.smallH1{
+	font-size: 20px;
+	line-height: 0.6em;
+	display: inline-block;
+	margin: 5px 5px 0 10px;
+}
+
+.smallSubtitle{
+	font-size: 12px;
+}
+
+#flex-topSearch{
+	grid-area: search;
+	/* height: inherit; */
+	display:flex;
+	background-color: #333333a4;
+}
+
+/* On focus, change its width to 22% */
+input[class=topSearchBar]{
+	border-style: none;
+	border-width: 2px;
+	border-color: #333333;
+	background-color: rgba(253, 253, 253, 0.438);
+	width: 25%;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;	
+	/* flex-grow: 1; */
+	align-items: center;
+	justify-content: left;
+	height: inherit;
+	color: inherit;
+}
+
+input[class=topSearchBar]:focus {
+	width: 80%;
+}
+
+.topSearchButton{
+	border-style: none;
+	border-width: 0 0 3px 0;
+	background-color: transparent;
+	margin: 4px 0px 0px 0px;
+	/* flex-grow: 1; */
+	text-align: center;
+	font-size: 120%;
+}
+
+.searchIcon{
+    color: #FDFDFD;
+}
+.searchIconHover{
+    color: rgba(253, 253, 253, 0.781);
+}
+
+
+#flex-topMenu{
+	grid-area: menu;
+	height: inherit;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	background-color: #333333a4;
+}
+
+.login{
+	flex-grow: 1;
+	letter-spacing: 0.2em;
+	margin: 0px;
+	font-weight: 600;
+	text-align: center;
+	color: #FDFDFD;
+}
+
+.login:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: rgba(253, 253, 253, 0.781);
+}
+
+
+.basket{
+	flex-grow: 1;
+	font-size: 110%;
+	text-align: center;
+	color: #FDFDFD;
+}
+
+.basket:hover{
+	cursor: pointer;
+	color: rgba(253, 253, 253, 0.781);
+}
+
+
+header{
+	display: block;
+	width: 100%;
+	height:200px;
+}
+
+/* ---------------------------------------------------------
+Books Carousel ----------------------------------------------*/
+
+#myCarousel{
+	margin: 0;
+	width: 100%;
+}
+
+.item-active{
+	width: 100%;
+}
+
+.item{
+	width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+Search area ---------------------------------------------------*/
+
+#centralSeach{
+	display: block;
+}
+
+#searchForm{
+	height: 200px;
+	background-color: #E80A0B;
+}
+
+.callToAction{
+    margin-bottom: -0%;
+    margin-top: 4%;
+}
+
+.search{
+    padding: 0.2%;
+    margin-bottom: 6%;
+}
+
+.mainSearchButton{
+    margin-top: 1.5%;
+    font-size: 120%;
+}
+
+.button{
+    margin-top: 2%;
+}
+
+.radio{
+    margin-top: -0.5%;
+}
+
+.radio>span{
+    font-style: italic;
+    margin-left: 1%;
+    margin-top: -3%;
+}
+
+
+input[class=mainSearch] {
+    width: 38%;
+    font-size: 120%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[class=mainSearch]:focus {
+    width: 42%;
+}
