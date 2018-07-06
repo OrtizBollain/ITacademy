@@ -58,11 +58,8 @@ Nav scroll pop up style
 ------------------------------------------------------------ */
 
 
-.nav-grid-ready{
-	display: grid;
-	grid-template-areas:
-		"logo search search menu";
-	grid-template-columns: repeat(4, 1fr);
+.nav-flex-ready{
+	display: flex;
 	height: 35px;
 	position: fixed;
 	top: 0;
@@ -70,15 +67,15 @@ Nav scroll pop up style
 	z-index: 1;
 }
 
-.nav-grid-none{
+.nav-flex-none {
 	display: none;
 }
 
-
 #topLogo{
-	grid-area: logo;
+	/* grid-area: logo; */
 	height: inherit;
 	background-color: transparent;
+	flex-grow: 1;
 }
 
 .smallH1{
@@ -93,9 +90,10 @@ Nav scroll pop up style
 }
 
 #flex-topSearch{
-	grid-area: search;
+	/* grid-area: search; */
 	/* height: inherit; */
 	display:flex;
+	flex-grow: 1;
 	background-color: #333333a4;
 }
 
@@ -138,9 +136,10 @@ input[class=topSearchBar]:focus {
 
 
 #flex-topMenu{
-	grid-area: menu;
+	/* grid-area: menu; */
 	height: inherit;
 	display: flex;
+	flex-grow: 1;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;

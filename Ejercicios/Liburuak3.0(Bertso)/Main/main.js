@@ -38,17 +38,36 @@ $("document").ready(function(){
     $(".topSearchButton").hover(function(){
         $("#searchIcon").toggleClass("searchIconHover");
     })
+    $('.nav-flex-ready').slideUp("fast", "swing");
 });
 
 
-// Scroll ----------------------------------------------------------
+// Scroll ------Pendiente de mejora----------------------------------------------------
 $(window).scroll(function(){
-    if($(this).scrollTop()>50) {
-        $('#navbar').slideDown("500");
+    if($(this).scrollTop()<10) {
+        $('.nav-flex-ready').slideUp("slow", "swing");
         }
-    else{$('#navbar').slideUp();
-}
+    if($(this).scrollTop()>50) {
+        $('.nav-flex-ready').slideDown("slow", "swing", timer);
+        }
+    else{$('.nav-flex-ready').hide();
+        }
+        
+    
 });
+
+
+
+
+
+    
+// if($(this).scrollTop()>50) {
+//     $('#navbar').slideToggle("7000");
+//     }
+// else{$('#navbar').hide();
+
+
+
 
 // https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Scroll-linked_effects
 // no funciona por la lectura asíncrona del navegador
