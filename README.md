@@ -1,4 +1,4 @@
-# ITacademy
+﻿# ITacademy
 Ejercicios formación IT Academy de Barcelona Activa primera edición
 
 Ejercicio_0: test git usando terminal git bash
@@ -13,4 +13,7 @@ https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ2_EsquemaLibu
 Ejercicio_3: modelo base de datos Liburuak
 https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ3(simplificado)_Liburuak_ModeloBBDD_DavidOrtizBollain.pdf
 https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ3(corregido)_LiburuakBBDD_Editable_DavidOrtizBollain.png
+
+Ejercicio_4: JavaScript básico
+https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ4_basicJS.js
 
