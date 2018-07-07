@@ -1,6 +1,7 @@
 // FASE 1
 
-// var myNameArray = ['D','A','V','I','D'];
+// var name = "DAVID"
+// var myNameArray = name.split("");
 // var arrayLength = myNameArray.length;
 // var myName = '';
 
@@ -16,7 +17,8 @@
 // 2. Comprovar si cadascuna de les lletres del teu nom és igual a ‘a’, ‘e’, ‘i’, ‘o’, ‘u’ concatenant les comprovacions amb ||  
 // ○ Extra: Si trobes un numero, mostra per pantalla: ‘Els noms de persones no contenen números!’.  
 
-// var myNameArray = ['D','A','V','1','D'];
+// var name = "DAVID"
+// var myNameArray = name.split("");
 // var arrayLength = myNameArray.length;
 // var myName = '';
 // var letter = "";
@@ -39,19 +41,44 @@
 // Pensa una forma per emmagatzemar tant les lletres del array 
 // com el nombre de vegades que apareixen i implementa’l. ○ Pista: ​Map   
 
-var myNameArray = ['D','A','V','I','D'];
-var arrayLength = myNameArray.length;
-var myLetter_count = {};
+// var name = "DAVID"
+// var myNameArray = name.split("");
+// var arrayLength = myNameArray.length;
+// var myLetter_count = {};
 
 
-for (var i = 0; i < arrayLength; i++) {
-  if(myLetter_count[myNameArray[i]] == undefined){
-    myLetter_count[myNameArray[i]]=1;
-  }
-  else  {
-    myLetter_count[myNameArray[i]]++;
-  }
-}
-for (var i in myLetter_count) {
-  console.log(i + " = " + myLetter_count[i]);
-}
+// for (var i = 0; i < arrayLength; i++) {
+//   if(myLetter_count[myNameArray[i]] == undefined){
+//     myLetter_count[myNameArray[i]]=1;
+//   }
+//   else  {
+//     myLetter_count[myNameArray[i]]++;
+//   }
+// }
+// for (var i in myLetter_count) {
+//   console.log(i + " = " + myLetter_count[i]);
+// }
+
+
+// ● Crea una array amb el teu cognom on cada posició correspongui a una lletra. 
+// ● Passa de les dues arrays a una sola. A més, afegeix una posició amb un espai buit entre la primera i la segona. 
+// És a dir, abans tenies les arrays name i surname i ara només tens una que es dirà fullName.  
+// FullName: [‘N’, ‘A’, ‘M’, ‘E’, ‘ ‘, ‘S’, ‘U’, ‘R‘, ‘N’, ‘A’, ‘M’, ‘E’] 
+// ● Pista: Feu servir aquesta funció (enteneu què esteu fent) var myFullName = []; myFullName.push(...myName);   
+
+
+var name = "DAVID";
+var surname = "ORTIZ";
+var space = "";
+var myNameArray = name.split("");
+var mySurnameArray = surname.split("");
+
+// OPCIÓN 1
+// var myFullName = myNameArray.concat(space, mySurnameArray);
+
+//OPCIÓN 2
+var myFullName = [];
+myFullName.push(myNameArray, mySurnameArray);
+
+
+console.log(myFullName);
