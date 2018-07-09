@@ -1,0 +1,8 @@
+@font-face {
+    font-family: starwing;
+    src: url(star_fox_starwing/Star-Fox-Starwing.ttf);
+}
+
+body {
+    font-family: starwing, Georgia, 'Times New Roman', Times, serif;
+}

@@ -41,25 +41,37 @@
 // Pensa una forma per emmagatzemar tant les lletres del array 
 // com el nombre de vegades que apareixen i implementa’l. ○ Pista: ​Map   
 
-// var name = "DAVID"
-// var myNameArray = name.split("");
-// var arrayLength = myNameArray.length;
-// var myLetter_count = {};
+var name = "DAVID"
+var myNameArray = name.split("");
+var arrayLength = myNameArray.length;
+var myLetter_count = {};
+var map = new Map();
 
 
+// OPCIÓN 1
 // for (var i = 0; i < arrayLength; i++) {
-//   if(myLetter_count[myNameArray[i]] == undefined){
-//     myLetter_count[myNameArray[i]]=1;
-//   }
-//   else  {
-//     myLetter_count[myNameArray[i]]++;
-//   }
+//     if (myLetter_count[myNameArray[i]] == undefined) {
+//         myLetter_count[myNameArray[i]] = 1;
+//     } else {
+//         myLetter_count[myNameArray[i]]++;
+//     }
 // }
 // for (var i in myLetter_count) {
-//   console.log(i + " = " + myLetter_count[i]);
+//     console.log(i + " = " + myLetter_count[i]);
 // }
 
+// OPCIÓN 2
+for (var i = 0; i < arrayLength; i++) {
+    if (!(map.has(myNameArray[i]))) {
+        map.set((myNameArray[i]), 1);
+        var newKey = map.get((myNameArray[i]));
+    } else {
+        map.set((myNameArray[i]), newKey + 1)
+    }
+}
+console.log(map);
 
+// FASE 4
 // ● Crea una array amb el teu cognom on cada posició correspongui a una lletra. 
 // ● Passa de les dues arrays a una sola. A més, afegeix una posició amb un espai buit entre la primera i la segona. 
 // És a dir, abans tenies les arrays name i surname i ara només tens una que es dirà fullName.  
@@ -67,18 +79,18 @@
 // ● Pista: Feu servir aquesta funció (enteneu què esteu fent) var myFullName = []; myFullName.push(...myName);   
 
 
-var name = "DAVID";
-var surname = "ORTIZ";
-var space = "";
-var myNameArray = name.split("");
-var mySurnameArray = surname.split("");
+// var name = "DAVID";
+// var surname = "ORTIZ";
+// var space = "";
+// var myNameArray = name.split("");
+// var mySurnameArray = surname.split("");
 
 // OPCIÓN 1
 // var myFullName = myNameArray.concat(space, mySurnameArray);
 
 //OPCIÓN 2
-var myFullName = [];
-myFullName.push(myNameArray, mySurnameArray);
+// var myFullName = [];
+// myFullName.push(...myNameArray, ...space, ...mySurnameArray);
+// myFullName.push(myNameArray, mySurnameArray);
 
-
-console.log(myFullName);
+// console.log(myFullName)
