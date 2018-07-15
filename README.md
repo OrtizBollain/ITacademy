@@ -17,3 +17,6 @@ https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ3(corregido)_
 Ejercicio_4: JavaScript básico
 https://github.com/OrtizBollain/ITacademy/blob/master/Ejercicios/EJ4_basicJS.js
 
+Ejercicio_5: JavaScript vintage Game
+https://github.com/OrtizBollain/ITacademy/tree/master/Ejercicios/Rockets!
+
