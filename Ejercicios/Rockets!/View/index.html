@@ -5,44 +5,81 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rockets!</title>
-    <meta name="description" content="">
+    <meta name="description" content="Rocket Game">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index-style.css">
-
-    <script src="../Controller/scripts.js"></script>
+    <script src="../jquery-3.3.1.js"></script>
 </head>
 
 <body>
-    <h1>Rockets!</h1>
-    <h2>Select your rocket</h2>
-    <div id="rocketSelect">
-        <div>Press to select this rocket</div>
-        <div>Press to select this rocket</div>
+    <header>
+        <h1>Rockets!</h1>
+        <div class="flex-Elon">
+            <div><img src="ElonMusk.png" alt="Elon Musk"></div>
+        </div>
+        <div class="TypingInfo">
+            <div class="typewriter" id="typewriter">
+                <h3>Welcome, my name is Elon.</h3>
+            </div>
+        </div>
+    </header>
+    <div id="Falcon9">
+        <div class="screen">
+            <div class="name">Name:
+                <span id="nameR1"></span>
+            </div>
+            <div class="propellers">Propellers:
+                <span id="propellersR1"></span>
+            </div>
+            <div class="power">Power:
+                <div id="powerR1"></div>
+            </div>
+            <div class="speed">Speed:
+                <span id="speedR1"></span>
+            </div>
+        </div>
+        <form class="control">
+            <div class="accelerate decelerate">
+                <input type="button" value="Accelerate">
+                <input type="button" value="Break">
+            </div>
+        </form>
     </div>
-    <div>
-        <div>Name:
-            <div id="nameR1"></div>
+    <div id="FalconHeavy">
+        <div class="screen">
+            <div class="name">Name:
+                <span id="nameR2"></span>
+            </div>
+            <div class="propellers">Propellers:
+                <span id="propellersR2"></span>
+            </div>
+            <div class="power">Power:
+                <div id="powerR2"></div>
+            </div>
+            <div class="speed">Speed:
+                <span id="speedR2"></span>
+            </div>
         </div>
-        <div>Power:
-            <div id="powerR1"></div>
-        </div>
-        <div>Speed:
-            <div id="speedR1"></div>
-        </div>
+        <form class="control">
+            <div class="accelerate decelerate">
+                <input type="button" value="Accelerate">
+                <input type="button" value="Break">
+            </div>
+        </form>
     </div>
-    <div>
-        <div>Name:
-            <div id="nameR2"></div>
+    <div class="grid-select">
+        <div class="grid-selectA">
+            <div> Press <span>A</span> to select <br><br>FALCON 9</div>
         </div>
-        <div>Power:
-            <div id="powerR2"></div>
+        <div class="grid-selectB">
+            <div>Press <span>B</span> to select <br><br>FALCON HEAVY</div>
         </div>
-        <div>Speed:
-            <div id="speedR2"></div>
-        </div>
+        <form class="grid-print">
+            <input type="button" value="Print rocket 1 info">
+            <input type="button" value="Print rocket 2 info">
+            <input type="button" value="Print all rockets">
+        </form>
     </div>
-
-
     <script src="../Model/rockets.js"></script>
     <script src="../Controller/scripts.js"></script>
 </body>

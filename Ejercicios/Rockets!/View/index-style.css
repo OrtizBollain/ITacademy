@@ -5,4 +5,210 @@
 
 body {
     font-family: starwing, Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-areas: "A Header B" "A Select B";
+    text-align: center;
+    /* background-color: #306230; */
+    background-color: black;
+    color: white;
+    text-shadow: 0.5px 1px #dfdfdf;
+}
+
+header {
+    grid-area: Header;
+}
+
+.TypingInfo {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 700px;
+}
+
+.typewriter h3 {
+    color: #fff;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em none white;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite !important;
+    /* color: red !important; */
+    text-decoration: underline;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: white;
+    }
+    34% {
+        color: transparent;
+    }
+    35% {
+        color: white;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+    }
+}
+
+#Falcon9 {
+    grid-template-areas: "Screen" "Control";
+    grid-area: A;
+    display: grid;
+    /* align-self: baseline; */
+    align-content: top;
+    grid-gap: 20px;
+}
+
+#FalconHeavy {
+    grid-template-areas: "Screen" "Control";
+    grid-area: B;
+    display: grid;
+    align-content: top;
+    grid-gap: 20px;
+}
+
+.screen {
+    display: grid;
+    grid-template-areas: "Name" "Propellers" "Power" "Speed";
+    width: 280px;
+    border-style: solid dashed;
+    margin: auto;
+    /* margin-top: 10px; */
+    padding: 10px;
+    grid-area: Screen;
+    color: white;
+}
+
+.name {
+    grid-area: Name;
+    padding: inherit;
+}
+
+.propellers {
+    grid-area: Propellers;
+    padding: inherit;
+}
+
+#propellerIcon1,
+#propellerIcon2 {
+    list-style: none;
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+
+#propellerIcon1 li,
+#propellerIcon2 li {
+    display: inline;
+    text-align: left;
+}
+
+.power {
+    grid-area: Power;
+    padding: inherit;
+}
+
+.speed {
+    grid-area: Speed;
+    padding: inherit;
+}
+
+.grid-form {
+    grid-area: Control;
+    font-size: 200%;
+}
+
+form input {
+    font-family: starwing;
+    background-color: black;
+    color: white;
+}
+
+form input:hover {
+    cursor: crosshair;
+    /* cursor: url(myCursor.png), auto; */
+}
+
+.grid-select {
+    grid-area: Select;
+    display: grid;
+    grid-template-areas: ".selectA selectB.""Print Print Print Print";
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.grid-selectA {
+    grid-area: selectA;
+    height: 200px;
+    width: 210px;
+    background: url(../View/Falcon\ 9.jpg) no-repeat center top;
+    text-align: center;
+    display: flex;
+    border-style: double;
+}
+
+.grid-selectB {
+    grid-area: selectB;
+    height: 200px;
+    width: 210px;
+    background: url(../View/FalconHeavy.jpg) no-repeat center top;
+    text-align: center;
+    display: flex;
+    border-style: double;
+}
+
+.grid-selectA>div,
+.grid-selectB>div {
+    margin: auto;
+    align-items: center;
+}
+
+.grid-print {
+    grid-area: Print;
+}
+
+.select>span {
+    text-decoration: underline;
+}
+
+.select.hover {
+    cursor: crosshair;
 }

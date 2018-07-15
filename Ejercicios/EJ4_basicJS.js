@@ -41,7 +41,7 @@
 // Pensa una forma per emmagatzemar tant les lletres del array 
 // com el nombre de vegades que apareixen i implementa’l. ○ Pista: ​Map   
 
-var name = "DAVID"
+var name = "DDDDAVID"
 var myNameArray = name.split("");
 var arrayLength = myNameArray.length;
 var myLetter_count = {};
@@ -64,9 +64,9 @@ var map = new Map();
 for (var i = 0; i < arrayLength; i++) {
     if (!(map.has(myNameArray[i]))) {
         map.set((myNameArray[i]), 1);
-        var newKey = map.get((myNameArray[i]));
     } else {
-        map.set((myNameArray[i]), newKey + 1)
+        var currentValue = map.get((myNameArray[i]));
+        map.set((myNameArray[i]), currentValue += 1)
     }
 }
 console.log(map);

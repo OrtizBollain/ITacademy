@@ -48,128 +48,56 @@
 
 
 //FASE 3--------------------------------------------
-// var name = String;
-// var speed = [];
-// var power = [];
+var name = String;
+var prop = [];
+var power = 0;
 
-// class Rockets {
-//     constructor(name, power, speed) {
-//         this.name = name;
-//         this.power = power;
-//         this.speed = speed;
-//         this.accelerate = function(power, speed) {
-//             var power = [];
-//             var speed = [];
-//             var resultado = [];
-//             for (var i=0; i <speed.length; i++) {
-//                 if (speed[i] < power[i]){
-//                     speed += speed[i]+10
-//                 }
-
-//             }
-
-//         };
-//         this.decelerate = function(power, speed) {
-
-//         };
-//     }
-// }
-
-
-// var rocket1 = new Rockets(" 32WESSDS", [10, 30, 80], [0, 0, 0]);
-// accelerate([10, 30, 80], [0, 0, 0]);
-// var rocket2 = new Rockets(" LDSFJA32", [30, 40, 50, 50, 30, 10], [0, 0, 0, 0, 0, 0]);
-// accelerate([30, 40, 50, 50, 30, 10], [0, 0, 0, 0, 0, 0]);
-
-// console.log(rocket1);
-// console.log(rocket2);
-// console.log(resultado);
-
-
-
-var power = [10, 30, 80];
-var speed = [0, 0, 0];
-var accelerationLevel = 10;
-// var iterationLimit = speed.length;
-var i = 0;
-// var newSpeed1 = 0;
-// var newSpeed2 = 0;
-// var newSpeed3 = 0;
-
-// function accelerate() {
-
-//     while (newSpeed1 < power[0]) {
-//         newSpeed1 += accelerationLevel;
-//         speed[0] = newSpeed1;
-//     }
-//     while (newSpeed2 < power[1]) {
-//         newSpeed2 += accelerationLevel;
-//         speed[1] = newSpeed2;
-//     }
-//     while (newSpeed3 < power[2]) {
-//         newSpeed3 += accelerationLevel;
-//         speed[2] = newSpeed3;
-//     }
-// }
-
-// accelerate();
-
-speed.forEach(element => {
-    while (element.valueOf < power[i]) {
-        newSpeed += accelerationLevel;
-        element = newSpeed;
-        i++;
+class Propellers {
+    constructor(maxPower, currentPower) {
+        this.maxPower = maxPower;
+        this.currentPower = 0;
     }
+}
 
-});
-
-
-
-// function accelerate() {
-//     for (var i = 0; i < iterationLimit; i++) {
-//         if (newSpeed < power[i]) {
-//             newSpeed += accelerationLevel;
-//             speed[i] = newSpeed;
-//         } else {
-//             continue;
-//         }
-//     }
-// for (var i = 0; i < iterationLimit; i++) {
-//     if (newSpeed < power[i]) {
-//         newSpeed += accelerationLevel;
-//         speed[i] = newSpeed;
-//     } else {
-//         continue;
-//     }
-// }
-
-
-
-// if (newSpeed <= power[i]) {
-//     newSpeed += accelerationLevel;
-//     speed[i] = newSpeed;
-//     i++;
-//     if (i = iterationLimit) {
-//         while (iterationLimit >= 0) {
-//             if (newSpeed <= power[i]) {
-//                 newSpeed += accelerationLevel;
-//                 speed[i] = newSpeed;
-//                 i--;
-//             } else {
-//                 break;
-//             }
-//         }
-//     } else {
-//         break;
-//     }
-
-
-// var currentSpeed = speed.reduce(function(result, item) {
-//     return result + item;
-// }, 0);
-
-
-
-console.log(speed);
-// console.log(currentSpeed);
-// console.log(iterationLimit);
+class Rockets {
+    constructor(name, prop, propNumber) {
+        this.name = name;
+        var tmpProp = [];
+        for (var i = 0; i < prop.length; i++) {
+            // console.log(prop[i]);
+            var propeller = new Propellers(prop[i]);
+            tmpProp.push(propeller);
+        }
+        this.prop = tmpProp;
+        this.arrayProp = prop;
+        this.propNumber = prop.length;
+        this.speed = 0;
+        this.computeSpeed = function() {
+            var tempSpeed = 0;
+            for (var i = 0; i < this.prop.length; i++) {
+                tempSpeed += this.prop[i].currentPower;
+            }
+            // console.log(tempSpeed);
+            this.speed = tempSpeed;
+        }
+        this.accelerate = function() {
+            for (var i = 0; i < this.prop.length; i++) {
+                if (this.prop[i].currentPower < this.prop[i].maxPower) {
+                    this.prop[i].currentPower += 10
+                } else;
+                continue;
+            }
+            this.computeSpeed();
+        }
+        this.decelerate = function() {
+            for (var i = 0; i < this.prop.length; i++) {
+                if (this.prop[i].currentPower > 0) {
+                    this.prop[i].currentPower -= 10
+                        // console.log(prop[i]);
+                } else;
+                continue;
+            }
+            this.computeSpeed();
+        }
+    }
+}
